@@ -6,11 +6,9 @@
     padding: 20px;
 }
 
-@media only screen and (max-device-width : 480px) {
-/* スマートフォンだけ以下を適用 */
-  	
-div.imgt {
-    width:100%;
+@media only screen and (max-device-width : 480px){
+    div.imgt {
+        width:100%;
     }
 }
     
@@ -22,11 +20,9 @@ div.imgt {
     margin: 0 auto 0 auto;
     }
 
-@media only screen and (max-device-width : 480px) {
-/* スマートフォンだけ以下を適用 */
-  	
-p.title {
-    width:100%;
+@media only screen and (max-device-width : 480px){
+    p.title {
+        width:100%;
     }
 }
 
