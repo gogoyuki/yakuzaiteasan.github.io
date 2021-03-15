@@ -6,11 +6,13 @@
     padding: 20px;
 }
 
-@media (max-width : 670px){
+@media (max-width : 479px){
     div.imgt {
         width:100%;
         height:auto;
-        right:15%
+        margin-right:auto;
+        margin-left:auto;
+       
     }
 }
     
@@ -22,12 +24,13 @@
     margin: 0 auto 0 auto;
 }
 
-@media (max-width : 670px){
+@media (max-width : 479px){
     p.title {
         width:100%;
-        max-width:100%;
         height:auto;
-        right:15%
+        margin-right:auto;
+        margin-left:auto;
+     }
 }
 
 /** ボタン **/
@@ -54,6 +57,16 @@
     
     /* ボタンにカーソルを合わせた時に指アイコンを表示 */
 }
+
+@media (max-width : 479px){
+    .disp-box label {
+        width:100%;
+        height:auto;
+        margin-right:auto;
+        margin-left:auto;
+     }
+}
+
 /** ボタンクリック時のボタンを押し込む動作 **/
 .disp-box label:active {
     -webkit-transform: translateY(4px); /* Chrome、Safari用 */
@@ -103,6 +116,17 @@
     margin-bottom: 80px;
     margin-left: 250px;                 /* ボタンにカーソルを合わせた時に指アイコンを表示 */
 }
+
+
+@media (max-width : 479px){
+    .disp-box2 label {
+        width:100%;
+        height:auto;
+        margin-right:auto;
+        margin-left:auto;
+     }
+}
+
 /** ボタンクリック時のボタンを押し込む動作 **/
 .disp-box2 label:active {
     -webkit-transform: translateY(4px); /* Chrome、Safari用 */
