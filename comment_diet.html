@@ -1,0 +1,88 @@
+</<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="haruhi.css">
+        <link rel="stylesheet" href="yuzuki.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script>
+        
+        $(function(){
+            $("#thank").css({"display":"none"});
+            
+            
+            $("#btn_ok").click(function(){
+                $("#advice").removeClass('show');
+                $("#advice").hide();
+                $("#advice").css({"display":"none"});
+                $("#explanation").removeClass('show');
+                $("#explanation").hide();
+                $("#explanation").css({"display":"none"});
+                $("#thank").slideUp;
+                $("thanks").slideUp;
+                $("#thank").addClass('mqgictime puffIn');
+                $("thanks").addClass('mqgictime puffIn');
+                $("#thank").slideDown;
+                $("thanks").slideDown;
+                $("#thank").css({"display":"inline-block"});
+                $("thanks").css({"display":"inline-block"});
+            });    
+        });
+
+        </script>
+    </head>
+    <body>
+        <div id= "explanation" class="imgt"><p class="title"><h2 style="text-align:center">薬剤TEAさんの解説🍵</h2> </div>
+        <style> 
+                
+        .imgt {
+            color: #000080;
+            font: size 10;em;
+            line-height:300%;
+            margin: 10px;
+            top: 500px;
+            text-align: center;
+        }
+        
+        </style>
+
+        <div id= "advice" class="check health">
+            <div class="comment">
+                <p> ダイエットについて：緑茶中の有効成分カテキンは、がん患者さんの栄養療法において評価されていて、がんの発生や成長の抑制メカニズムに効果を発揮してくれます。
+
+                    カテキンのがん抑制メカニズムは、発がんの抑制や、がん成長促進の抑制、がん細胞自滅死の促進などなどです。中国緑茶よりもカテキンの含有量が高い日本緑茶で、健康を守りましょう♪</p>
+                    
+                    <div id="tea_image" class="center">
+                        <img src="oolong.jpg" alt="ウーロン茶の写真" title="ウーロン茶" width="400" height="300">
+                    </div>
+            
+            <div id= "btn_ok" class="of_course">OK</div>
+
+            </div>
+        </div>
+
+        <div id= "thank" class="thanks">
+            <div class="thank you">
+                <div class="gratitude">
+                    見てくれてありがとう❤️　楽しいティータイムを🍵
+                </div>
+
+                <div class="button_series">
+                    
+                    <div class="restart">
+                        <a href="index.html"><p>他のお悩みも見てみる🍵</p>
+                    </div>
+                    
+                    <div class="feed">
+                        <a href="https://forms.gle/U8qirZUumTrRnLKd8"><p>感想やご意見はこちらから🍵</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    
+
+     </body>
+</html> 
