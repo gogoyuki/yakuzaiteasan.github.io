@@ -1,0 +1,1 @@
+# yakuzaiteasan.github.io
