@@ -1,0 +1,489 @@
+</<!DOCTYPE html>
+<html>
+<html　lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>教えて！薬剤TEAさん</title>
+        <meta name="description" content="薬剤TEAさんがお茶で美容と健康のお悩み解決。">
+        <meta name="keywords" content="美容,健康,薬剤TEAさん,診断,レコメンド">
+        <link rel="stylesheet" href="haruhi.css">
+        <link rel="stylesheet" href="yuzuki.css">
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+        <script>
+        $(function(){
+            $("#health_choice").css({"display":"none"});
+            $("#beauty_choice").css({"display":"none"});
+            $("#hbp_ans").css({"display":"none"});
+            $("#stomach_ans").css({"display":"none"});
+            $("#cancer_ans").css({"display":"none"});
+            $("#aa_ans").css({"display":"none"});
+            $("#skin_ans").css({"display":"none"});
+            $("#swell_ans").css({"display":"none"});
+            $("#flu_ans").css({"display":"none"});
+            $("#tooth_ans").css({"display":"none"});
+            $("#diabete_ans").css({"display":"none"});
+            $("#hair_ans").css({"display":"none"});
+            $("#diet_ans").css({"display":"none"});
+            $("#whitening_ans").css({"display":"none"});
+
+        var x = 100
+
+
+
+
+
+            $("#heal_trouble").click(function(){
+                $(this).removeClass('show');
+                $(this).hide();
+                $(this).css({"display":"none"});
+                $("#beauty_trouble").css({"display":"none"});
+                $(this).hide();
+                $("check_health").show('slow');
+                $("check_health").slideUp;
+                $("#health_choice").show('slow');
+                $(this).addClass('mqgictime puffIn');
+                $(this).slideDown;
+                $("#health_choice").css({"display":"table"});
+            });
+
+            $("#beauty_trouble").click(function(){
+                $(this).removeClass('show');
+                $(this).hide();
+                $(this).css({"display":"none"});
+                $("#heal_trouble").css({"display":"none"});
+                $(this).hide();
+                $('check_beauty').show('slow');
+                $("cheak_beauty").slideUp;
+                $("#beauty_choice").show('slow')
+                $(this).addClass('mqgictime puffIn');
+                $(this).slideDown;
+                $("#beauty_choice").css({"display":"table"});
+            });
+
+
+            $("#btn_num1").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide("slow");
+                $("#health_choice").css({"display":"none"});
+                $("result_ans").show('slow');
+                $("result_ans").slideUp;
+                $("#hbp_ans").show('slow')
+                $(this).addClass('mqgictime puffIn');
+                $(this).slideDown;
+                $("#hbp_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById('greentea_hbp').style.fontSize = x + '%'; }
+                larger("#greentea_hbp")
+            });
+
+            $("#btn_num2").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide("slow");
+                $("#health_choice").css({"display":"none"});
+                $("result_cancer").show('slow');
+                $("result_cancer").slideUp;
+                $("#cancer_ans").show('slow');
+                $(this).addClass('mqgictime puffIn');
+                $(this).slideDown;
+                $("#cancer_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("greentea_can").style.fontSize = x + '%'; }
+                larger("#greentea_can")
+            });
+
+            $("#btn_num3").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide('slow');
+                $("#health_choice").css({"display":"none"});
+                $("result_stomach").show('slow');
+                $("result_stomach").slideUp;
+                $("#stomach_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#stomach_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("oolong").style.fontSize = x + '%'; }
+                larger("#oolong")
+            });
+
+
+
+            $("#btn_num3_1").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide('slow');
+                $("#health_choice").css({"display":"none"});
+                $("result_flu").show('slow');
+                $("result_flu").slideUp;
+                $("#flu_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#flu_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("blacktea").style.fontSize = x + '%'; }
+                larger("#blacktea")
+            });
+
+
+            $("#btn_num3_2").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide('slow');
+                $("#health_choice").css({"display":"none"});
+                $("result_tooth").show('slow');
+                $("result_tooth").slideUp;
+                $("#tooth_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#tooth_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("roasted").style.fontSize = x + '%'; }
+                larger("#roasted")
+            });
+
+
+            $("#btn_num3_3").click(function(){
+                $("#health_choice").removeClass('show');
+                $("#health_choice").hide('slow');
+                $("#health_choice").css({"display":"none"});
+                $("result_diabete").show('slow');
+                $("result_diabete").slideUp;
+                $("#diabete_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#diabete_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("greentea_diabete").style.fontSize = x + '%'; }
+                larger("#greentea_diabete")
+            });
+
+
+
+
+            $("#btn_num4").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_aa").show('slow');
+                $("result_aa").slideUp;
+                $("#aa_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#aa_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("redbush").style.fontSize = x + '%'; }
+                larger("#redbush")
+            });
+
+            $("#btn_num5").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_skin").show('slow');
+                $("result_skin").slideUp;
+                $("#skin_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#skin_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("rose").style.fontSize = x + '%'; }
+                larger("#rose")
+            });
+
+            $("#btn_num6").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_swell").show('slow');
+                $("result_swell").slideUp;
+                $("#swell_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#swell_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("hibiscus").style.fontSize = x + '%'; }
+                larger("#hibiscus")
+            });
+
+
+
+
+            $("#btn_num6_1").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_hair").show('slow');
+                $("result_hair").slideUp;
+                $("#hair_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#hair_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("herb").style.fontSize = x + '%'; }
+                larger("#herb")
+            });
+
+
+            $("#btn_num6_2").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_diet").show('slow');
+                $("result_diet").slideUp;
+                $("#diet_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#diet_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("oolong_diet").style.fontSize = x + '%'; }
+                larger("#oolong_diet")
+            });
+
+
+            $("#btn_num6_3").click(function(){
+                $("#beauty_choice").removeClass('show');
+                $("#beauty_choice").hide('slow');
+                $("#beauty_choice").css({"display":"none"});
+                $("result_whitening").show('slow');
+                $("result_whitening").slideUp;
+                $("#whitening_ans").show('slow');
+                $(this).addClass('magictime puffin');
+                $(this).slideDown;
+                $("#whitening_ans").css({"display":"table"});
+                function larger()  { x *= 2; document.getElementById("greentea_white").style.fontSize = x + '%'; }
+                larger("#greentea_white")
+            });
+
+
+
+        });
+        
+        </script>
+    </head>
+ 
+    <body>
+    <body bgcolor="#adff2f" text="#000080">
+        <div class="imgt"><p class="title">　教えて！薬剤TEAさん　<h2 style="text-align:center">薬剤TEAさんがお茶であなたの美容と健康をサポート！</h2>
+        <style> 
+        div.imgt {
+            position:absolute;
+            top:1em;
+            left:8em;
+            border: 5px solid;
+            padding: 20px;
+            }
+            
+        p.title {
+            font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+            color: #000080;
+            font-size:5em;
+            line-height:90%;
+             margin: 10px;
+            }
+        </style>
+        
+
+
+        <div id="heal_trouble" class="disp-box">
+            <label for="disp-btn">健康のお悩み</label>
+            <input type="button" id="disp-btn"> 
+            <p class="text">クリックされました！</p>
+        </div>
+
+        <div id="beauty_trouble"  class="disp-box2">
+            <label for="disp-btn2">美容のお悩み</label>
+            <input type="button" id="disp-btn2">
+            <p class="text2">クリックされました！</p>
+        </div>
+
+
+        <div id = "health_choice" class="check_health">
+            <div class="che">
+                <div class="che_core">
+                    <p class="txt"><span class="num"></span>  この中から最も予防したい健康のお悩みを選んでください</p>
+                <div class="btn_zone">
+                    <div class="btn">
+                        <input id="btn_num1" type="radio" value="kouketuatu" name="health"/>
+                        <label for="btn_num1" class="radio">
+                            高血圧
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num2" type="radio" value="cancer" name="health"/>
+                        <label for="btn_num2" class="radio">
+                            がん
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num3" type="radio"value="musiba" name="health"/>
+                        <label for="btn_num3" class="radio">
+                            胃もたれ
+                        </label></div>
+                     <div class="btn">
+                        <input id="btn_num3_1" type="radio"value="musiba" name="health"/>
+                        <label for="btn_num3_1" class="radio">
+                            インフルエンザ
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num3_2" type="radio"value="musiba" name="health"/>
+                        <label for="btn_num3_2" class="radio">
+                            歯周病
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num3_3" type="radio"value="musiba" name="health"/>
+                        <label for="btn_num3_3" class="radio">
+                            糖尿病
+                        </label></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id = "beauty_choice" class="check_beauty">
+            <div class="che">
+                <div class="che_core">
+                    <p class="txt"><span class="num"></span> この中から最も気になる美容のお悩みを選んでください</p>
+                <div class="btn_zone">
+                    <div class="btn">
+                        <input id="btn_num4" type="radio" value="antiaging" name="beauty"/>
+                        <label for="btn_num4" class="radio">
+                            アンチエイジング
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num5" type="radio" value="skin" name="beauty"/>
+                        <label for="btn_num5" class="radio">
+                            美肌
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num6" type="radio" value="otuuji" name="beauty"/>
+                        <label for="btn_num6" class="radio">
+                            むくみ
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num6_1" type="radio" value="otuuji" name="beauty"/>
+                        <label for="btn_num6_1" class="radio">
+                            美髪
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num6_2" type="radio" value="otuuji" name="beauty"/>
+                        <label for="btn_num6_2" class="radio">
+                            ダイエット
+                        </label></div>
+                    <div class="btn">
+                        <input id="btn_num6_3" type="radio" value="otuuji" name="beauty"/>
+                        <label for="btn_num6_3" class="radio">
+                            美白
+                        </label></div>      
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div id= "hbp_ans" class=result_hbp>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="greentea_hbp" class="result core">           <p>緑茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_hbp.html" class="btn_greentea_hbp">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "cancer_ans" class=result_cancer>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="greentea_can" class="result core">           <p>緑茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_cancer.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "stomach_ans"class=result_stomach>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="oolong" class="result core">           <p>ウーロン茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_stomach.html">もっと詳しく</a>
+                </div>
+        </div>
+
+
+
+
+
+        <div id = "flu_ans"class=result_flu>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="blacktea" class="result core">           <p>紅茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_flu.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "tooth_ans"class=result_tooth>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="roasted" class="result core">           <p>ほうじ茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_tooth.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "diabete_ans"class=result_diabete>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="greentea_diabete" class="result core">           <p>緑茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_diabete.html">もっと詳しく</a>
+                </div>
+        </div>
+
+
+
+
+
+
+
+        <div id = "aa_ans" class=result_aa>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="redbush" class="result core">           <p>ルイボスティーです！</p><br></div>
+                <div class="start">
+                    <a href="./comment_aa.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "skin_ans" class=result_skin>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="rose" class="result core">           <p>ローズヒップティーです！</p><br></div>
+                <div class="start">
+                    <a href="./comment_skin.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "swell_ans" class=result_swell>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="hibiscus" class="result core">           <p>ハイビスカスティーです！</p><br></div>
+                <div class="start">
+                    <a href="./comment_swell.html">もっと詳しく</a>
+                </div>
+        </div>
+
+
+
+
+        <div id = "hair_ans"class=result_hair>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="herb" class="result core">           <p>ハーブティーです！</p><br></div>
+                <div class="start">
+                    <a href="./comment_hair.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "diet_ans"class=result_diet>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="oolong_diet" class="result core">           <p>ウーロン茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_diet.html">もっと詳しく</a>
+                </div>
+        </div>
+
+        <div id = "whitening_ans"class=result_whitening>
+            <p>今日のティータイムにおすすめなお茶は...</p>
+            <div id="greentea_white" class="result core">           <p>緑茶です！</p><br></div>
+                <div class="start">
+                    <a href="./comment_whitening.html">もっと詳しく</a>
+                </div>
+        </div>
+
+
+
+    </div>
+
+      
+        
+    </body>
+</html>
