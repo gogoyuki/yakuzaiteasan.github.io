@@ -55,6 +55,7 @@
     line-height:300%;
     float:right;
     margin-right: 300px;
+    overflow:hidden;
 
     
     
@@ -117,7 +118,8 @@
     line-height:300%;
     margin-top: 100px;
     margin-bottom: 80px;
-    margin-left: 250px;                 /* ボタンにカーソルを合わせた時に指アイコンを表示 */
+    margin-left: 250px;
+    overflow:hidden;  /* ボタンにカーソルを合わせた時に指アイコンを表示 */
 }
 
 
