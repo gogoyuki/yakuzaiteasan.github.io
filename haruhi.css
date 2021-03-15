@@ -1,0 +1,370 @@
+.div.imgt {
+    position:absolute;
+    top:1em;
+    left:8em;
+    border: 5px solid;
+    padding: 20px;
+}
+    
+.p.title {
+    font-family: 'Arial Black','ヒラギノ角ゴシック','Hiragino Sans','メイリオ', Meiryo,'ヒラギノ角ゴ StdN','Hiragino Kaku Gothic StdN',sans-serif;
+    color: #000080;
+    font-size:5em;
+    line-height:90%;
+    margin: 0 auto 0 auto;
+    }
+
+/** ボタン **/
+.disp-box label {
+    display: inline-block;
+    color: #332c10;                   /* ボタンの文字色 */
+    background-color: #ffdb4f;        /* ボタンの背景色 */
+    font-weight: bold;                /* 文字の太さ */
+    padding: 0.5em 1em;               /* ボタン内側の余白 */
+    border-bottom: solid 4px #ccb03f; /* ボタンの影部分 */
+    border-radius: 3px;               /* 角丸 */
+    cursor: pointer;
+    display: table;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto; /*インライン要素だからcenterは使わない*/
+    margin-top: 123px;
+    margin-bottom: 60px;
+    line-height:300%;
+    float:right;
+    margin-right: 300px;
+
+    
+    
+    /* ボタンにカーソルを合わせた時に指アイコンを表示 */
+}
+/** ボタンクリック時のボタンを押し込む動作 **/
+.disp-box label:active {
+    -webkit-transform: translateY(4px); /* Chrome、Safari用 */
+    -moz-transform: translateY(4px);    /* Firefox用 */
+    -ms-transform: translateY(4px);     /* IE用 */
+    transform: translateY(4px);
+    border-bottom: none;
+    text-align:center;
+}
+/** チェックボックス **/
+.disp-box input {
+    display: none;
+    text-align: center; /* 非表示 */
+}
+/** 表示・非表示を切り替えるテキスト（「クリックされました！」の部分） **/
+.disp-box .text {
+    color: #C9171E;    /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    overflow: hidden;
+    opacity: 0;        /* 文字を非表示 */
+    transition: 0.2s;
+    text-align: center;  /* 文字が表示・非表示される時のスピード */
+}
+/** チェックボックスにチェックが入った時の、テキストの処理 **/
+.disp-box input:checked ~ .text {
+    height: auto;
+    opacity: 1; /* 文字を表示 */
+}
+
+
+/** ボタン **/
+.disp-box2 label {
+    display: inline-block;
+    color: #332c10;                   /* ボタンの文字色 */
+    background-color: #ffc0cb;        /* ボタンの背景色 */
+    font-weight: bold;                /* 文字の太さ */
+    padding: 0.5em 1em;               /* ボタン内側の余白 */
+    border-bottom: solid 4px #ff8095; /* ボタンの影部分 */
+    border-radius: 3px;
+    display: table;
+    text-align: center;               /* 角丸 */
+    cursor: pointer;
+    margin: 0 auto;
+    width: 150px;
+    line-height:300%;
+    margin-top: 100px;
+    margin-bottom: 80px;
+    margin-left: 250px;                 /* ボタンにカーソルを合わせた時に指アイコンを表示 */
+}
+/** ボタンクリック時のボタンを押し込む動作 **/
+.disp-box2 label:active {
+    -webkit-transform: translateY(4px); /* Chrome、Safari用 */
+    -moz-transform: translateY(4px);    /* Firefox用 */
+    -ms-transform: translateY(4px);     /* IE用 */
+    transform: translateY(4px);
+    border-bottom: none;
+}
+/** チェックボックス **/
+.disp-box2 input {
+    display: none; /* 非表示 */
+}
+/** 表示・非表示を切り替えるテキスト（「クリックされました！」の部分） **/
+.disp-box2 .text2 {
+    color: #C9171E;    /* 文字色 */
+    font-weight: bold; /* 文字の太さ */
+    overflow: hidden;
+    opacity: 0;        /* 文字を非表示 */
+    transition: 0.2s;  /* 文字が表示・非表示される時のスピード */
+}
+/** チェックボックスにチェックが入った時の、テキストの処理 **/
+.disp-box2 input:checked ~ .text2 {
+    height: auto;
+    opacity: 1; /* 文字を表示 */
+}
+
+
+
+
+.start {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #00BFFF;/*ボタン色*/
+    color: white;
+    border-bottom: solid 4px #0000CD;
+    border-radius: 3px;
+    text-align: center;
+}
+.start:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
+
+
+.resulty{
+    text-align: center;
+}
+
+.check_health{
+    width: 102%;
+    max-width: 1100px;
+    height: 200px;
+    text-align: center;
+    margin:0 auto 0 auto;
+    background: #ffdb4f;
+    display: table;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.check_beauty{
+    width: 102%;
+    max-width: 1100px;
+    height: 200px;
+    text-align: center;
+    margin:0 auto;
+    background: #ffc0cb;
+    display: table;
+    overflow: hidden;
+    box-sizing: border-box;
+    
+}
+
+.che{
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    opacity: 1;
+    transition: all .4s ease;
+}
+
+.result{
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+    opacity: 1;
+    transition: all.4s ease;
+    
+}
+
+.result_hbp{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_cancer{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_stomach{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+
+.result_flu{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_tooth{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_diabete{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+
+.result_aa{
+    text-align: center;
+    margin: 0 auto; 
+}
+.result_skin{
+    text-align: center;
+    margin: 0 auto; 
+}
+.result_swell{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+
+.result_hair{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_diet{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+.result_whitening{
+    text-align: center;
+    margin: 0 auto; 
+}
+
+
+
+
+.result.active{
+    display:table-cell;
+    transform:translate3d(100%,0,0)
+}
+
+.result.active.open{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.result.active.close{
+    transform: translate3d(-100%,0,0);
+}
+
+.result_core{
+    text-align: center;
+    width:100%;
+    max-width:400px;
+    margin: 0 auto 20px auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    border: 1px solid #C9171E;
+    box-sizing: border-box;
+}
+
+.result_core p{
+    font-size: 20px;
+}
+
+.che.active{
+    display: table-cell;
+    transform: translate3d(100%,0,0);
+}
+
+.che.active.open{
+    opacity: 1;
+    transform: translate3d(0,0,0);
+}
+
+.che.active.close{
+    transform: translate3d(-100%,0,0);
+}
+
+.che_core{
+    text-align: center;
+    width:100%;
+    margin: 0 auto 20px auto;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+
+}
+.txt{
+    margin-bottom: 30px;
+    padding: 0 0 10px 0;
+}
+
+.btn_zone{
+    text-align: center;
+    margin-bottom:  40px;
+}
+
+.btn{
+    display: inline-table;
+    border-radius: 5px;
+    border: 1px solid #C9171E;
+    margin: 10px 5px;
+}
+
+.btn label{
+    cursor: pointer;
+    width: 80%;
+    height: 100%;
+    min-width: 120px;
+}
+
+.btn:first-child{
+    margin-bottom: 10px;
+}
+
+@media screen and  (min-width: 768px) {
+    .btn:first-child{
+        margin-right: 5px;
+       margin-bottom: 0;
+}
+}
+
+.btn .radio::before{
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 1px;
+  box-sizing: border-box;
+}
+
+.btn input:checked + .radio::before{
+    width: 13px;
+    height: 13px;
+}
+
+
+
+
+.btn_greentea_hbp {
+    display: inline-block;
+    padding: 0.5em 1em;
+    background: #32CD32;/*ボタン色*/
+    color: #F0FFFF;
+    border-bottom: solid 4px #2E8B57;
+    border-radius: 3px;
+}
+
+.btn_greentea_hbp:hover {
+    background: #32CD32;/*ボタン色*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px); /*下に動く*/
+    box-shadow: 0px 0px 1px #2E8B57(0, 0, 0, 0.2);/*影を小さく*/
+    border-bottom: none;
+}
