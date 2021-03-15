@@ -14,6 +14,14 @@
     margin: 0 auto 0 auto;
     }
 
+@media only screen and (max-device-width : 480px) {
+/* スマートフォンだけ以下を適用 */
+  	
+p.title {
+    width:100%;
+    }
+}
+
 /** ボタン **/
 .disp-box label {
     display: inline-block;
