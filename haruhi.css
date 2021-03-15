@@ -6,7 +6,7 @@
     padding: 20px;
 }
 
-@media only screen and (max-device-width : 480px){
+@media (max-width : 670px){
     div.imgt {
         width:100%;
     }
@@ -20,7 +20,7 @@
     margin: 0 auto 0 auto;
     }
 
-@media only screen and (max-device-width : 480px){
+@media (max-width : 670px){
     p.title {
         width:100%;
     }
