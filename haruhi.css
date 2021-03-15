@@ -352,7 +352,7 @@
 
 
 
-.btn_greentea_hbp {
+.btn_detail {
     display: inline-block;
     padding: 0.5em 1em;
     background: #32CD32;/*ボタン色*/
@@ -361,7 +361,7 @@
     border-radius: 3px;
 }
 
-.btn_greentea_hbp:hover {
+.btn_detail:hover {
     background: #32CD32;/*ボタン色*/
     -webkit-transform: translateY(4px);
     transform: translateY(4px); /*下に動く*/
