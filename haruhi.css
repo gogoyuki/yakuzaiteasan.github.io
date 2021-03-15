@@ -9,6 +9,8 @@
 @media (max-width : 670px){
     div.imgt {
         width:100%;
+        max-width:100%;
+        height:auto;
     }
 }
     
@@ -23,6 +25,8 @@
 @media (max-width : 670px){
     p.title {
         width:100%;
+        max-width:100%;
+        height:auto;
     }
 }
 
